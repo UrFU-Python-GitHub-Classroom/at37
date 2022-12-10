@@ -18,10 +18,15 @@ git commit -m '2.2.2'
 git checkout 2.2
 git merge 2.2-develop
 =======
+```
+
 # 2.2.3
 
 ```
 # создадим ветку от определенного коммита
 git checkout -b 2.2-develop-2 6d3284
->>>>>>> 2.2-develop-2
 ```
+
+>>>>>>> 2.2-develop-2
+
+![Git Graph](gitgraph.png)
