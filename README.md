@@ -10,3 +10,7 @@ pip freeze > requirements.txt
 ## 2.1.1
 
 [файл excel](report.xlsx)
+
+## 2.1.2
+
+![графики](graph.png)
