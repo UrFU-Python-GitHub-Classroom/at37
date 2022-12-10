@@ -1,0 +1,298 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <style>
+        html
+        {
+            font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+        }
+        td, th
+        {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        table
+        {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        img
+        {
+            width:95%;
+            height:auto;
+        }
+        h1, h2
+        {
+            text-align: center;
+        }
+        .salary, .pie
+        {
+            width:45%;
+            float:left;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Аналитика по зарплатам и городам для профессии Программист</h1>
+<img src="file:///D:/Documents/Documents/PycharmProject/pythonProject6/graph.png" />
+<h2>Статистика по годам</h2>
+<table>
+<tr>
+  <th>Год</th>
+  <th>Средняя зарплата</th>
+  <th>Средняя зарплата - Программист</th>
+  <th>Количество вакансий</th>
+  <th>Количество вакансий - Программист</th>
+</tr>
+
+<tr>
+  <td>2007</td>
+  <td>38916</td>
+  <td>2196</td>
+  <td>43770</td>
+  <td>317</td>
+</tr>
+
+<tr>
+  <td>2008</td>
+  <td>43646</td>
+  <td>17549</td>
+  <td>50412</td>
+  <td>2460</td>
+</tr>
+
+<tr>
+  <td>2009</td>
+  <td>42492</td>
+  <td>17709</td>
+  <td>46699</td>
+  <td>2066</td>
+</tr>
+
+<tr>
+  <td>2010</td>
+  <td>43846</td>
+  <td>29093</td>
+  <td>50570</td>
+  <td>3614</td>
+</tr>
+
+<tr>
+  <td>2011</td>
+  <td>47451</td>
+  <td>36700</td>
+  <td>55770</td>
+  <td>4422</td>
+</tr>
+
+<tr>
+  <td>2012</td>
+  <td>48243</td>
+  <td>44153</td>
+  <td>57960</td>
+  <td>4966</td>
+</tr>
+
+<tr>
+  <td>2013</td>
+  <td>51510</td>
+  <td>59954</td>
+  <td>58804</td>
+  <td>5990</td>
+</tr>
+
+<tr>
+  <td>2014</td>
+  <td>50658</td>
+  <td>66837</td>
+  <td>62384</td>
+  <td>5492</td>
+</tr>
+
+<tr>
+  <td>2015</td>
+  <td>52696</td>
+  <td>70039</td>
+  <td>62322</td>
+  <td>5375</td>
+</tr>
+
+<tr>
+  <td>2016</td>
+  <td>62675</td>
+  <td>75145</td>
+  <td>66817</td>
+  <td>7219</td>
+</tr>
+
+<tr>
+  <td>2017</td>
+  <td>60935</td>
+  <td>82823</td>
+  <td>72460</td>
+  <td>8105</td>
+</tr>
+
+<tr>
+  <td>2018</td>
+  <td>58335</td>
+  <td>131701</td>
+  <td>76879</td>
+  <td>10062</td>
+</tr>
+
+<tr>
+  <td>2019</td>
+  <td>69467</td>
+  <td>115086</td>
+  <td>85300</td>
+  <td>9016</td>
+</tr>
+
+<tr>
+  <td>2020</td>
+  <td>73431</td>
+  <td>102243</td>
+  <td>89791</td>
+  <td>7113</td>
+</tr>
+
+<tr>
+  <td>2021</td>
+  <td>82690</td>
+  <td>57623</td>
+  <td>100987</td>
+  <td>3466</td>
+</tr>
+
+<tr>
+  <td>2022</td>
+  <td>91795</td>
+  <td>18294</td>
+  <td>116651</td>
+  <td>1115</td>
+</tr>
+
+</table>
+<h2>Статистика по городам</h2>
+<section class="flex_table">
+<table class="salary">
+<tr>
+  <th>Город</th>
+  <th>Уровень зарплат</th>
+</tr>
+
+<tr>
+  <td>Москва</td>
+  <td>76970</td>
+</tr>
+
+<tr>
+  <td>Санкт-Петербург</td>
+  <td>65286</td>
+</tr>
+
+<tr>
+  <td>Новосибирск</td>
+  <td>62254</td>
+</tr>
+
+<tr>
+  <td>Екатеринбург</td>
+  <td>60962</td>
+</tr>
+
+<tr>
+  <td>Казань</td>
+  <td>52580</td>
+</tr>
+
+<tr>
+  <td>Краснодар</td>
+  <td>51644</td>
+</tr>
+
+<tr>
+  <td>Челябинск</td>
+  <td>51265</td>
+</tr>
+
+<tr>
+  <td>Самара</td>
+  <td>50994</td>
+</tr>
+
+<tr>
+  <td>Пермь</td>
+  <td>48089</td>
+</tr>
+
+<tr>
+  <td>Нижний Новгород</td>
+  <td>47662</td>
+</tr>
+
+</table>
+<table class="pie">
+<tr>
+  <th>Город</th>
+  <th>Доля вакансий</th>
+</tr>
+
+<tr>
+  <td>Москва</td>
+  <td>32,46%</td>
+</tr>
+
+<tr>
+  <td>Санкт-Петербург</td>
+  <td>11,97%</td>
+</tr>
+
+<tr>
+  <td>Новосибирск</td>
+  <td>2,71%</td>
+</tr>
+
+<tr>
+  <td>Казань</td>
+  <td>2,37%</td>
+</tr>
+
+<tr>
+  <td>Нижний Новгород</td>
+  <td>2,32%</td>
+</tr>
+
+<tr>
+  <td>Ростов-на-Дону</td>
+  <td>2,09%</td>
+</tr>
+
+<tr>
+  <td>Екатеринбург</td>
+  <td>2,07%</td>
+</tr>
+
+<tr>
+  <td>Краснодар</td>
+  <td>1,85%</td>
+</tr>
+
+<tr>
+  <td>Самара</td>
+  <td>1,43%</td>
+</tr>
+
+<tr>
+  <td>Воронеж</td>
+  <td>1,41%</td>
+</tr>
+
+</table>
+</section>
+</body>
+</html>

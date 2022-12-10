@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <style>
+        html
+        {
+            font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+        }
+        td, th
+        {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        table
+        {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        img
+        {
+            width:95%;
+            height:auto;
+        }
+        h1, h2
+        {
+            text-align: center;
+        }
+        .salary, .pie
+        {
+            width:45%;
+            float:left;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Аналитика по зарплатам и городам для профессии Программист</h1>
+<img src="file:///D:/Documents/Documents/PycharmProject/pythonProject6/{{ image_file }}" />
+<h2>Статистика по годам</h2>
+<table>
+<tr>
+  <th>{{header_year[0]}}</th>
+  <th>{{header_year[1]}}</th>
+  <th>{{header_year[2]}}</th>
+  <th>{{header_year[3]}}</th>
+  <th>{{header_year[4]}}</th>
+</tr>
+{% for key, value in years_salary_dic.items() %}
+<tr>
+  <td>{{key}}</td>
+  <td>{{value}}</td>
+  <td>{{years_count_dic[key]}}</td>
+  <td>{{years_salary_vac_dic[key]}}</td>
+  <td>{{years_count_vac_dic[key]}}</td>
+</tr>
+{% endfor %}
+</table>
+<h2>Статистика по городам</h2>
+<section class="flex_table">
+<table class="salary">
+<tr>
+  <th>{{header_city[0]}}</th>
+  <th>{{header_city[1]}}</th>
+</tr>
+{% for key, value in area_salary_dic.items() %}
+<tr>
+  <td>{{key}}</td>
+  <td>{{value}}</td>
+</tr>
+{% endfor %}
+</table>
+<table class="pie">
+<tr>
+  <th>{{header_city[2]}}</th>
+  <th>{{header_city[3]}}</th>
+</tr>
+{% for key, value in area_count_dic.items() %}
+<tr>
+  <td>{{key}}</td>
+  <td>{{value}}</td>
+</tr>
+{% endfor %}
+</table>
+</section>
+</body>
+</html>

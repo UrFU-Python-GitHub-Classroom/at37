@@ -14,3 +14,7 @@ pip freeze > requirements.txt
 ## 2.1.2
 
 ![графики](graph.png)
+
+## 2.1.3
+
+[файл html](result.html)
