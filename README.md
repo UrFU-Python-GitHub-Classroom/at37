@@ -12,4 +12,8 @@ git commit -m '2.2.1'
 git checkout -b 2.2-develop
 git add .
 git commit -m '2.2.2'
+
+# после этого вернулись и с мержили изменения
+git checkout 2.2
+git merge 2.2-develop
 ```
