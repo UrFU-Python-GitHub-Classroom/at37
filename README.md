@@ -3,8 +3,8 @@
 Тестовый проект Django
 
 ```python
-pyhton manage.py createsuperuser
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
+python manage.py makemigrations - все модели подготовятся для импорта в базу (папка migrations)
+python manage.py migrate - модели импортируются в базу
+pyhton manage.py createsuperuser - создать пользователя для админки
+python manage.py runserver - запустить сервер
 ```

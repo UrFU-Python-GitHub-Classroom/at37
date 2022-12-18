@@ -1,0 +1,75 @@
+{% load static %}
+
+<link
+    rel="stylesheet"
+	type="text/css"
+	href="{% static 'app/css/bootstrap.css' %}"
+/>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Профессии</title>
+</head>
+<body>
+	<div class="container">
+		<!-- Header -->
+		<div class="row flex-nowrap sticky-top">
+			<header class="d-flex flex-wrap justify-content-center py-3 bg-light border-bottom">
+				<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+					<span class="fs-4">Аналитика профессии "Аналитик"</span>
+				</a>
+			</header>
+		</div>
+		<!-- Header End -->
+		<div class="row flex-nowrap">
+			<!-- Sidebar -->
+			<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+				<div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+					<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
+						<li class="nav-item">
+							<a href="/" class="nav-link align-middle px-0">
+								<i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Главная</span>
+							</a>
+						</li>
+						<li>
+							<a href="/info" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+								<span class="ms-1 d-none d-sm-inline">Востребованность</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link px-0 align-middle">
+								<span class="ms-1 d-none d-sm-inline">География</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+								<span class="ms-1 d-none d-sm-inline">Навыки</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+								<span class="ms-1 d-none d-sm-inline">Последние вакансии</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Sidebar end -->
+			<!-- Main -->
+			<div class="col py-3">
+				{% block content %}
+				{% endblock %}
+			</div>
+			<!-- Main End -->
+		</div>
+		<!-- Footer -->
+		<div class="row flex-nowrap sticky-bottom border-top">
+			<footer class="footer mt-auto py-3 bg-light ">
+				<span class="text-muted">Фамилия Имя Отчество Группа</span>
+			</footer>
+		</div>
+		<!-- Footer End -->
+	</div>	
+</body>
+</html>
