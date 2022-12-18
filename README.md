@@ -8,3 +8,5 @@ python manage.py migrate - модели импортируются в базу
 pyhton manage.py createsuperuser - создать пользователя для админки
 python manage.py runserver - запустить сервер
 ```
+
+![image](https://user-images.githubusercontent.com/35339452/208312308-0d5d6229-bf5c-4f27-b1a7-f02a5d597aa0.png)
